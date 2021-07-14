@@ -1,0 +1,155 @@
+/*----- Font Link----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body {font-family: 'Poppins', sans-serif;}
+
+     /*---------------------- Header Section Styles -----------------------*/
+.header-background{
+    background-color: #2D25A0;
+    margin: 0px;
+    width: 100%;
+    padding-right: 140px;
+    padding-left: 156px;
+    padding-top: 207px;
+    padding-bottom: 213px;}
+
+#flex{display: flex;
+    align-items: center;}
+
+#title {font-size: 64px;
+    color: white;
+    border: 1px solid #2D25A0;
+    padding-bottom: 27px;}
+h1 {margin-top: 0px;
+    margin-bottom: 0px;}
+#title:hover {color: yellowgreen;}
+
+.button {padding: 10px 24px;
+    background: #E02C6D;
+    border: 2px solid #E02C6D;
+    text-align: center;}
+button a {text-decoration: none;
+    color: white;}
+.button:hover {background-color: yellowgreen;}
+
+#bg-image img{width: 556px;
+    height: 438px;
+    padding-left: 102px;
+    }
+#bg-image img:hover{width: 556px;
+    height: 438px;
+    transform: rotatey(360deg);
+    transition: width 3s,height 3s,transform 10s;}
+    /*------------------------ Header Section End ---------------------- */
+
+
+/*----------------------------- Main Section Styles ---------------------------*/
+
+.players-container {display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    background-color: white;
+    margin-left: 210px;
+    margin-right: 210px;
+    justify-content: center;
+    align-items: center;}
+
+.player {height: 426px;
+    width: 300px;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin: 0px;}
+
+.player img {width: 300px;
+    height: 256px;
+    margin-bottom: 16px;}
+
+.player-details {width: 300px;
+    height: 154px;}
+
+p { font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color:#6C6C6C;
+    padding-top: 0px;
+    padding-bottom: 18px;}
+    h2 {margin: 0px;}
+    /*-------------------------- Main Section End ----------------------*/
+
+    /*-------------------------Extra Part ------------------------- */
+    .extra{display: grid;
+    grid-template-columns: repeat(2,1fr);}
+    .table{margin-left: 200px;
+        margin-top: 100px;}
+    thead{background-color: yellowgreen;}
+    td,th {border: 1px solid gray;
+    text-align: center;
+    padding: 15px 30px;}
+    tr:nth-child(even) {background-color: rgba(128, 128, 128, 0.199);}
+    tr:hover {background-image: linear-gradient(#E02C6D,#2D25A0);
+    color:white ;}
+    .football:hover {transform:rotate(360deg);
+        transition: width 3s,height 3s,transform 10s;}
+    /* ---------------------Extra Section End ------------------------ */
+
+/*-------------------------- Footer Section Styles ---------------------------*/
+.footer-part {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    border: 1px solid white;}
+.footer-logo img{
+    width: 483.87px;
+    height: 110px;}
+.icon {width: 32px;
+    height: 32px;
+    color: gray;
+    background-color: rgba(128, 128, 128, 0.199);
+    padding: 2px 5px;
+    border-radius: 50%;
+    margin-right: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;}
+.copyright{font-size: 18px;
+    font-weight: 400px;
+    margin-bottom:20px;}
+
+    /*------------------------ Responsive layout ------------------------*/
+    /*---------------------- Mobile Devices ---------------------------*/
+@media only screen and (max-width:688px) {
+
+.header-background,.footer-part{
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;}    
+.header-background {width: 100%;
+    padding-right: 66px;
+    padding-left: 16px;}
+.button {padding-top: 30px;
+    padding-bottom: 50px;}
+.bg-image img {width: 330px;
+    height: 260px;
+    padding: 50px 15px 60px 15px;}
+.players-container{grid-template-columns: repeat(1,1fr);
+    grid-column-gap: 24px;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;}
+.player {padding:0px 15px}
+
+.title{font-size: 36px;
+    padding-top: 112px;}
+}
+/*------------------------ Tablet Devices -------------------------*/
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .header-background{width: 100%;
+    padding-right: 100px;}
+    .bg-image img {padding-left: 15px;}
+    .players-container{grid-template-columns: repeat(2,1fr);
+    grid-column-gap:15px;
+    grid-row-gap: 20px;}
+
+    
